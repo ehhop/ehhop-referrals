@@ -1,43 +1,74 @@
 <!DOCTYPE html> 
 <html>
 	<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>Call</title> 
-  <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
-  <link rel="stylesheet" href="css/app.css" />
-  <script src="js/jquery-1.8.2.min.js"></script>
-  <script src="js/jquery.mobile-1.2.0.min.js"></script>
-  <script src="js/app.js"></script>
-</head> 
-<body> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Documents</title> 
+	  	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+	  	<link rel="stylesheet" href="css/app.css" />
+	  	<script src="js/jquery-1.8.2.min.js"></script>
+	  	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+	  	<script src="js/app.js"></script>
+	</head>
+	<body> 
+		<div data-role="page"> <!-- Change data-role to page -->
+			<div data-role="header">  <!--data-theme="d"-->
+				<h1>Referral Forms</h1>
+				<a class="button slideup" id="infoButton" href="index.html">Back</a>
+			</div>
 
-<div data-role="dialog">
-	
-		<div data-role="header" data-theme="d">
-			<h1>Referral Forms</h1>
+			<div data-role="footer" data-id="nav" data-position="fixed">
+				<div data-role="navbar">
+			    	<ul>
+				        <li><a href="IThelp.html" data-icon="info">FAQ</a></li>
+				        <li><a href="phone.html" data-icon="grid" >Contact</a></li>
+				        <li><a href="index.html" data-icon="home">Home</a></li>
+				        <li><a href="FS.html" data-icon="gear">FS</a></li>
+				        <li><a href="forms.html" data-icon="check">Forms</a></li>
+			    	</ul>
+				</div><!-- /navbar -->
+			</div>
 
+			<div data-role="content"> <!--data-theme="c"-->
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li><a href="phq9.html">
+						PHQ-9 Calculator
+					</a></li>
+					<li><a href="https://docs.google.com/file/d/0B3_U8yNTiBrlRW9aMkFSRTI5cjQ/edit"> <!--data-role = "button" and data-theme = "b" -->
+						$20 Referral Voucher (Good for one referral per patient.)
+					</a></li> 
+					<li><a href="https://docs.google.com/file/d/0B3_U8yNTiBrlVDJOb21uenl3ZjQ/edit">
+						Mammogram Form (Must be signed by attending.)
+					</a></li>
+					<li><a href="https://docs.google.com/file/d/0Bwby1XbIUZF1MmQzMDY5YWEtOTNiZi00NThlLWI3ZmQtZmYzNzI5NTUwMTJi/edit">
+						DEXA Scan Form
+					</a></li>
+					<li><a href="http://neweyesfortheneedy.org/wp-content/uploads/2011/06/Voucher-Application.pdf">
+						Eyeglasses Voucher
+					</a></li>
+					<li><a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxlaGhvcGFjdHxneDoyYzRjMDFkMDMzOWFkYzAw">
+						Visiting Nurse Forms
+					</a></li>
+					<li><a href="https://docs.google.com/file/d/0ByN1f2Y59Abta001N2c2TUJOVWs/edit?usp=sharing">
+						Exercise Program Physician Consent
+					</a></li>
+					<li><a href="https://docs.google.com/file/d/0ByN1f2Y59Abtek1xWW1ERGJwYVU/edit?usp=sharing">
+						Exercise Program Patient Waiver, English
+					</a></li>
+					<li><a href="https://docs.google.com/file/d/0ByN1f2Y59AbtVm1mdXZsY0xKRUU/edit?usp=sharing">
+						Exercise Program Patient Waiver, Espanol
+					</a></li>
+					<li><a href="https://docs.google.com/file/d/0ByN1f2Y59AbtSGVQaHR2eXYxSnc/edit?usp=sharing">
+						Financial Services Process Flowsheet
+					</a></li>
+					<li><a href="https://docs.google.com/file/d/0ByN1f2Y59AbtSS04MTFYMWZ3a28/edit?usp=sharing">
+						Financial Services Documents Flowsheet
+					</a></li>
+					<!--<li><a href="docs-dialogs.html" data-role="button" data-rel="back" data-theme="c">
+						Cancel
+					</a></li>-->
+				</ul>
+			</div>
 		</div>
-
-		<div data-role="content" data-theme="c">
-		<a href="phq9.html" data-role="button" data-theme="d"> PHQ-9 Calculator</a>
-			<a href="https://docs.google.com/file/d/0B3_U8yNTiBrlRW9aMkFSRTI5cjQ/edit" data-role="button" data-theme="b">$20 Referral Voucher</a> <ul><li>Good for one referral per patient.</li></ul>
-
-       <a href="https://docs.google.com/file/d/0B3_U8yNTiBrlVDJOb21uenl3ZjQ/edit" data-role="button" data-theme="b">Mammogram Form</a>
-
-<ul><li>Must be signed by attending.</li></ul>
-
-
- <a href="https://docs.google.com/file/d/0Bwby1XbIUZF1MmQzMDY5YWEtOTNiZi00NThlLWI3ZmQtZmYzNzI5NTUwMTJi/edit" data-role="button" data-theme="b">DEXA Scan Form</a>
- <a href="http://neweyesfortheneedy.org/wp-content/uploads/2011/06/Voucher-Application.pdf" data-role="button" data-theme="b">Eyeglasses Voucher</a>
-
-<a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxlaGhvcGFjdHxneDoyYzRjMDFkMDMzOWFkYzAw" data-role="button" data-theme="b">Visiting Nurse Forms</a>
-
-
-			<a href="docs-dialogs.html" data-role="button" data-rel="back" data-theme="c">Cancel</a>    
-		</div>
-	</div>
-
-
-</body>
+	</body>
 </html>
