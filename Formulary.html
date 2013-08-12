@@ -10,16 +10,9 @@
 		<script src="js/jquery-1.8.2.min.js"></script>
 		<script src="js/jquery.mobile-1.2.0.min.js"></script>
 		<script src="js/app.js"></script>
-		<style>
-		/*This style tag specifies the style for the drug names, and their accompanying metadata (e.g. prices, category, etc.)
-		It enables us to avoid <span class="drugmeta"> or  tags, whose enclosed text does not wrap when displayed by a browser window that is too narrow.
-		We can use span or div tags with class attributes, which gives us control over formatting and enables text-wrapping*/
-		.drugmeta{
-			font-size: 0.8em;
-			font-weight: normal;}</style>
 	</head>
 	<body>
-		<div data-role="page" id="cacheMe" data-dom-cache="true">
+		<div data-role="page" id="formulary" data-dom-cache="true">
 			<div data-role="content">
 				<ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="My patient needs..." data-theme="d">
 					<li data-role="list-divider">ANALGESICS</li>

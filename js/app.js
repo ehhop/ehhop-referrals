@@ -7,6 +7,10 @@ $(document).delegate("#phq9,#phq9-spanish", "pageinit", function() {
   });
 });
 
+$(document).delegate('#formulary', 'pageinit', function() {
+  $(this).find('[data-type=search]').attr('autocomplete', 'off').attr('autocapitalize', 'off');
+})
+
 
 
 // $(document).bind("mobileinit", function () {
