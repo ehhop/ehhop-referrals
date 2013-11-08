@@ -1,7 +1,7 @@
-$(document).delegate("#phq9,#phq9-spanish", "pageinit", function() {
+$(document).delegate("#phq9,#phq9-spanish,#gad7", "pageinit", function() {
   $(this).find(':radio').click(function() {
     var total = 0,
-      $page = $(this).closest('#phq9,#phq9-spanish');
+      $page = $(this).closest('#phq9,#phq9-spanish,#gad7');
     $page.find(':checked').each(function() { total += parseInt($(this).val(), 10); });
     $page.find('.totalSum').text("Score: " + total);
   });
