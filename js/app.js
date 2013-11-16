@@ -1,4 +1,4 @@
-$(document).delegate("#phq9,#phq9-spanish,#gad7,#gad7spanish", "pageinit", function() {
+$(document).delegate("#phq9,#phq9-spanish,#gad7,#gad7-spanish", "pageinit", function() {
   $(this).find(':radio').click(function() {
     var total = 0,
       $page = $(this).closest('#phq9,#phq9-spanish,#gad7,#gad7spanish');
